@@ -1,0 +1,144 @@
+\hypertarget{class_perceptron_1_1_perceptron}{}\section{Perceptron.\+Perceptron Klassenreferenz}
+\label{class_perceptron_1_1_perceptron}\index{Perceptron.\+Perceptron@{Perceptron.\+Perceptron}}
+Klassendiagramm für Perceptron.\+Perceptron\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_perceptron_1_1_perceptron}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_perceptron_1_1_perceptron_a612d2470864b433455123ab67596c79e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class_perceptron_1_1_perceptron_a74c50bc1321f3e226ca4e0f96316378d}{eta}}=0.\+01, \mbox{\hyperlink{class_perceptron_1_1_perceptron_a39c8cf01e04f72473ea4b817fbc32405}{n\+\_\+iter}}=50, \mbox{\hyperlink{class_perceptron_1_1_perceptron_ab6afa4dc8b06b17e82885aaf6c20aa81}{random\+\_\+state}}=1)
+\item 
+def \mbox{\hyperlink{class_perceptron_1_1_perceptron_a2479bd0c6de945508cf00933916bb2a6}{fit}} (self, X, y, w)
+\item 
+def \mbox{\hyperlink{class_perceptron_1_1_perceptron_a21cab7a11445f766e6258d71529da03f}{net\+\_\+input}} (self, X)
+\item 
+def \mbox{\hyperlink{class_perceptron_1_1_perceptron_abe5ade4bde9e08101baaec87b53e7b6e}{predict}} (self, X)
+\item 
+def \mbox{\hyperlink{class_perceptron_1_1_perceptron_a5d312133ac49a2238ef5f06dc0917592}{show\+\_\+tf}} (self, X, y, tf\+\_\+iter=1)
+\end{DoxyCompactItemize}
+\subsection*{Öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_perceptron_1_1_perceptron_a74c50bc1321f3e226ca4e0f96316378d}{eta}}
+\item 
+\mbox{\hyperlink{class_perceptron_1_1_perceptron_a39c8cf01e04f72473ea4b817fbc32405}{n\+\_\+iter}}
+\item 
+\mbox{\hyperlink{class_perceptron_1_1_perceptron_ab6afa4dc8b06b17e82885aaf6c20aa81}{random\+\_\+state}}
+\item 
+\mbox{\hyperlink{class_perceptron_1_1_perceptron_ae70631ee7d9fbd1c562c9891941d6a62}{w\+\_\+}}
+\item 
+\mbox{\hyperlink{class_perceptron_1_1_perceptron_af304ae57628fdf47e1d2fec6cc5f5417}{errors\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+\begin{DoxyVerb}Perceptron classifier.
+
+Parameters
+------------
+eta : float
+  Learning rate (between 0.0 and 1.0)
+n_iter : int
+  Passes over the training dataset.
+random_state : int
+  Random number generator seed for random weight
+  initialization.
+
+Attributes
+-----------
+w_ : 1d-array
+  Weights after fitting.
+errors_ : list
+  Number of misclassifications (updates) in each epoch.\end{DoxyVerb}
+ 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{class_perceptron_1_1_perceptron_a612d2470864b433455123ab67596c79e}\label{class_perceptron_1_1_perceptron_a612d2470864b433455123ab67596c79e}} 
+\index{Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Perceptron.\+Perceptron.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{eta = {\ttfamily 0.01},  }\item[{}]{n\+\_\+iter = {\ttfamily 50},  }\item[{}]{random\+\_\+state = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{class_perceptron_1_1_perceptron_a2479bd0c6de945508cf00933916bb2a6}\label{class_perceptron_1_1_perceptron_a2479bd0c6de945508cf00933916bb2a6}} 
+\index{Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}!fit@{fit}}
+\index{fit@{fit}!Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}}
+\subsubsection{\texorpdfstring{fit()}{fit()}}
+{\footnotesize\ttfamily def Perceptron.\+Perceptron.\+fit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{X,  }\item[{}]{y,  }\item[{}]{w }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fit training data.
+
+Parameters
+----------
+X : {array-like}, shape = [n_samples, n_features]
+  Training vectors, where n_samples is the number of samples and
+  n_features is the number of features.
+y : array-like, shape = [n_samples]
+  Target values.
+
+Returns
+-------
+self : object\end{DoxyVerb}
+ \mbox{\Hypertarget{class_perceptron_1_1_perceptron_a21cab7a11445f766e6258d71529da03f}\label{class_perceptron_1_1_perceptron_a21cab7a11445f766e6258d71529da03f}} 
+\index{Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}!net\+\_\+input@{net\+\_\+input}}
+\index{net\+\_\+input@{net\+\_\+input}!Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}}
+\subsubsection{\texorpdfstring{net\+\_\+input()}{net\_input()}}
+{\footnotesize\ttfamily def Perceptron.\+Perceptron.\+net\+\_\+input (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{X }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate net input\end{DoxyVerb}
+ \mbox{\Hypertarget{class_perceptron_1_1_perceptron_abe5ade4bde9e08101baaec87b53e7b6e}\label{class_perceptron_1_1_perceptron_abe5ade4bde9e08101baaec87b53e7b6e}} 
+\index{Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}!predict@{predict}}
+\index{predict@{predict}!Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}}
+\subsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily def Perceptron.\+Perceptron.\+predict (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{X }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return class label after unit step\end{DoxyVerb}
+ \mbox{\Hypertarget{class_perceptron_1_1_perceptron_a5d312133ac49a2238ef5f06dc0917592}\label{class_perceptron_1_1_perceptron_a5d312133ac49a2238ef5f06dc0917592}} 
+\index{Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}!show\+\_\+tf@{show\+\_\+tf}}
+\index{show\+\_\+tf@{show\+\_\+tf}!Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}}
+\subsubsection{\texorpdfstring{show\+\_\+tf()}{show\_tf()}}
+{\footnotesize\ttfamily def Perceptron.\+Perceptron.\+show\+\_\+tf (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{X,  }\item[{}]{y,  }\item[{}]{tf\+\_\+iter = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{class_perceptron_1_1_perceptron_af304ae57628fdf47e1d2fec6cc5f5417}\label{class_perceptron_1_1_perceptron_af304ae57628fdf47e1d2fec6cc5f5417}} 
+\index{Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}!errors\+\_\+@{errors\+\_\+}}
+\index{errors\+\_\+@{errors\+\_\+}!Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}}
+\subsubsection{\texorpdfstring{errors\+\_\+}{errors\_}}
+{\footnotesize\ttfamily Perceptron.\+Perceptron.\+errors\+\_\+}
+
+\mbox{\Hypertarget{class_perceptron_1_1_perceptron_a74c50bc1321f3e226ca4e0f96316378d}\label{class_perceptron_1_1_perceptron_a74c50bc1321f3e226ca4e0f96316378d}} 
+\index{Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}!eta@{eta}}
+\index{eta@{eta}!Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}}
+\subsubsection{\texorpdfstring{eta}{eta}}
+{\footnotesize\ttfamily Perceptron.\+Perceptron.\+eta}
+
+\mbox{\Hypertarget{class_perceptron_1_1_perceptron_a39c8cf01e04f72473ea4b817fbc32405}\label{class_perceptron_1_1_perceptron_a39c8cf01e04f72473ea4b817fbc32405}} 
+\index{Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}!n\+\_\+iter@{n\+\_\+iter}}
+\index{n\+\_\+iter@{n\+\_\+iter}!Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}}
+\subsubsection{\texorpdfstring{n\+\_\+iter}{n\_iter}}
+{\footnotesize\ttfamily Perceptron.\+Perceptron.\+n\+\_\+iter}
+
+\mbox{\Hypertarget{class_perceptron_1_1_perceptron_ab6afa4dc8b06b17e82885aaf6c20aa81}\label{class_perceptron_1_1_perceptron_ab6afa4dc8b06b17e82885aaf6c20aa81}} 
+\index{Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}!random\+\_\+state@{random\+\_\+state}}
+\index{random\+\_\+state@{random\+\_\+state}!Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}}
+\subsubsection{\texorpdfstring{random\+\_\+state}{random\_state}}
+{\footnotesize\ttfamily Perceptron.\+Perceptron.\+random\+\_\+state}
+
+\mbox{\Hypertarget{class_perceptron_1_1_perceptron_ae70631ee7d9fbd1c562c9891941d6a62}\label{class_perceptron_1_1_perceptron_ae70631ee7d9fbd1c562c9891941d6a62}} 
+\index{Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}!w\+\_\+@{w\+\_\+}}
+\index{w\+\_\+@{w\+\_\+}!Perceptron\+::\+Perceptron@{Perceptron\+::\+Perceptron}}
+\subsubsection{\texorpdfstring{w\+\_\+}{w\_}}
+{\footnotesize\ttfamily Perceptron.\+Perceptron.\+w\+\_\+}
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/flach/\+Documents/\+Lehre/\+Module/\+T\+S\+V/notebooks/\+L\+V\+\_\+\+T\+S\+V\+\_\+repos/aktuell/functions/\mbox{\hyperlink{_perceptron_8py}{Perceptron.\+py}}\end{DoxyCompactItemize}

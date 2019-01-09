@@ -53,6 +53,11 @@ def format_text():
 #    return(info_string)
 
 def get_info(file):
+    """Ermittlung der Informationen zu einem Soundfile
+    - Dateiname, Wort, Abtastfrequenz, Format, Anz. ATW, Häufigkeit des Wortes im Korpus, Dauer [s], Maximum, Minimum
+    
+    file ... Name des Soundfiles"""
+    
     text = open("sound/wavToTag.txt", "r")
     mylist = []
     for line in text:
